@@ -1,11 +1,17 @@
 # frontend-tools
 
-Three Claude Code commands, the reference files they score against, and the
-browser tooling behind them. The lens is the last 10 percent: accessibility,
-interaction psychology, motion, and design tokens, measured against named
-principles rather than taste assertions.
+These are the three Claude Code commands I use when building websites, the 
+reference files they score against, and the browser tooling behind them. 
+They are aimed specifically at accessibility, interaction psychology, 
+motion, and design tokens, measured against named principles rather than 
+taste assertions.
 
 ## What a finding looks like
+
+The principle in question, the violation and priority level, the human 
+consequence, and an actionable fix.
+
+Here are two real examples from running against my own site:
 
 `/ux-check` audited the work gallery on my portfolio in July 2026. Verbatim
 output, unedited:
@@ -23,9 +29,6 @@ output, unedited:
 >   `@media (hover: none)`, render `.visit` in the accent color at rest
 >   (persistent, not hover-gated) so the "See it live →" affordance is always
 >   visible on touch.
-
-That is the bar. A named principle, the mechanism that breaks, the human
-consequence, and a fix you can apply. Not "improve mobile CTA visibility."
 
 A companion finding from the same run, on timing rather than interaction:
 
